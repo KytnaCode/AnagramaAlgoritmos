@@ -54,18 +54,14 @@ si son iguales, *a* y *b* son anagramas, en caso contrario no lo son.
 #### Descripciòn
 
 ```
-Dado un par de cadenas a y b:
+Dado dos cadenas a y b:
 
-	Si difieren en longitud, a y b no son anagramas.
-	En caso contrario, proseguir.
-	Crear un slice A de caracteres con todos los caracteres de a.
-	Eliminar las repeticiones en A.
-	Crear dos variable resulta y resultB inicializados en 1.
-	Por cada elemento v con indice i en A:
-	    establecer resultA como si mismo multiplicado por el nùmero de veces que aparece v en a por el nùmero primo i.
-		establecer resultB como si mismo multiplicado por el nùmero de veces que aparece v en b por el numero primo i.
-	si resultA es igual a resultB, entonces a y b son anagramas.
-	en caso contrario, a y b no son anagramas.
+	Si difieren en longitud, no es un anagrama.
+	Si tienen la misma longitud, proseguir.
+	Crear una lista con las letras de cada entrada.
+	Ordenar alfabeticamente ambas listas.
+	Si son las misma lista, es una anagrama.
+	En caso contrario, no lo es.
 ```
 
 ### Prime Factor Detection

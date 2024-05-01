@@ -54,18 +54,18 @@ si son iguales, *a* y *b* son anagramas, en caso contrario no lo son.
 #### Descripciòn
 
 ```
-Dado dos cadenas a y b:
+Dado un par de cadenas a y b:
 
-	Si a y b difierien en longitud, entonces a y b NO son anagramas.
+	Si difieren en longitud, a y b no son anagramas.
 	En caso contrario, proseguir.
-	Crear una lista A con los caracteres de a.
-	Eliminar los caracteres repetidos en A.
-	Por cada caracter v en A:
-
-
-		Si la cantidad de veces que aparece v en a es distinta a la cantidad que aparece en b, entonces a y b NO son anagramas.
-		Caso contrario proseguir.
-	Si por cada elemento v no se concluyo que a y b no sean anagramas, entonces a y b son anagramas.
+	Crear un slice A de caracteres con todos los caracteres de a.
+	Eliminar las repeticiones en A.
+	Crear dos variable resulta y resultB inicializados en 1.
+	Por cada elemento v con indice i en A:
+	    establecer resultA como si mismo multiplicado por el nùmero de veces que aparece v en a por el nùmero primo i.
+		establecer resultB como si mismo multiplicado por el nùmero de veces que aparece v en b por el numero primo i.
+	si resultA es igual a resultB, entonces a y b son anagramas.
+	en caso contrario, a y b no son anagramas.
 ```
 
 ### Prime Factor Detection
@@ -79,18 +79,18 @@ no lo son.
 #### Descripciòn
 
 ```
-Dado dos cadenas a y b:
+Dado un par de cadenas a y b:
 
-	Si a y b difierien en longitud, entonces a y b NO son anagramas.
+	Si difieren en longitud, a y b no son anagramas.
 	En caso contrario, proseguir.
-	Crear una lista A con los caracteres de a.
-	Eliminar los caracteres repetidos en A.
-	Por cada caracter v en A:
-
-
-		Si la cantidad de veces que aparece v en a es distinta a la cantidad que aparece en b, entonces a y b NO son anagramas.
-		Caso contrario proseguir.
-	Si por cada elemento v no se concluyo que a y b no sean anagramas, entonces a y b son anagramas.
+	Crear un slice A de caracteres con todos los caracteres de a.
+	Eliminar las repeticiones en A.
+	Crear dos variable resulta y resultb inicializados en 1.
+	Por cada elemento v con indice i en A:
+	    Establecer resultA como si mismo multiplicado por el nùmero de veces que aparece v en a por el nùmero primo i.
+        Establecer resultB como si mismo multiplicado por el nùmero de veces que aparece v en b por el numero primo i.
+	Si resultA es igual a resultB, entonces a y b son anagramas.
+	En caso contrario, a y b no son anagramas.
 ```
 
 ### Map Detection
@@ -110,7 +110,6 @@ Dado dos cadenas a y b:
 	Crear una lista A con los caracteres de a.
 	Eliminar los caracteres repetidos en A.
 	Por cada caracter v en A:
-
 
 		Si la cantidad de veces que aparece v en a es distinta a la cantidad que aparece en b, entonces a y b NO son anagramas.
 		Caso contrario proseguir.
